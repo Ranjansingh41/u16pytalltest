@@ -1,0 +1,16 @@
+jobs:
+- name: u16pytall-test
+  type: runSh
+  steps:
+    - TASK:
+        runtime:
+          options:
+            imageName: "drydock/u16pytall"
+            imageTag: master
+        script:
+           - python --version
+           - python3.4 --version
+           - python3.5 --version
+           - python3.6 --version
+           - pip --version
+           - virtualenv --version
