@@ -15,7 +15,6 @@ jobs:
            - python2.7 -V
            - python3.1 -V
            - python3.2 -V
-           - python3.3 -V
            - python3.4 -V
            - python3.5 -V
            - python3.6 -V
