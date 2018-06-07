@@ -1,23 +1,20 @@
-jobs:
-- name: u16pytall-test
-  type: runSh
-  steps:
-    - TASK:
-        runtime:
-          options:
-            imageName: "drydock/u16pytall"
-            imageTag: master
-        script:
-           - python2.3 -V
-           - python2.4 -V
-           - python2.5 -V
-           - python2.6 -V
-           - python2.7 -V
-           - python3.1 -V
-           - python3.2 -V
-           - python3.4 -V
-           - python3.5 -V
-           - python3.6 -V
-           - python3.7 -V
-           - pip --version
-           - virtualenv --version
+language: none
+
+services:
+    - python
+
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u16pytall
+    image_tag: master
+    pull: true
+    
+    
+  ci:
+      - python3.1 -V
+      - python3.2 -V
+
+
+
+
