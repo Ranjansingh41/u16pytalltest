@@ -8,8 +8,8 @@ python:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u16pytall
-    image_tag: master
+    image_name: ranjansingh/python
+    image_tag: latest
     pull: true
     
     
